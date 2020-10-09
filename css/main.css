@@ -1,0 +1,130 @@
+/*header*/
+.header{
+    min-height: 100vh;
+    position: relative;
+    background-image: url(../images/leaf.png);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 12.5%;
+}
+.header__image{
+    position: absolute;
+    right: 0;
+    top: 0;
+    max-width: 43.5%;
+}
+.header__top{
+    padding-top: 2rem;
+    display: flex;
+    align-items: baseline;
+}
+.header__logo{
+    max-width: 10rem;
+}
+/*Menu*/
+.menu{
+    margin-left: 13%;
+    position: relative;
+    z-index: 2;
+}
+.menu__list{
+    display: flex;
+    align-items: center;
+}
+.menu__item{
+    margin: 0 2.5rem;
+}
+.menu__link{
+    color: var(--gray-dark);
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.2s linear;
+}
+.menu__link:hover{
+    color: var(--primary-color);
+}
+.menu__collapse{
+    display: none;
+    position: relative;
+    top: -5px;
+    font-size: 2rem;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+/*Content*/
+.header__content{
+    padding-top: 13rem;
+    position: relative;
+    max-width: 55.5rem;
+    z-index: 2;
+    margin-left: 5rem;
+}
+.header__content-slogan{
+    font-family: var(--secondary-font);
+    color: var(--primary-color);
+    margin-bottom: 3rem;
+    display: inline-block;
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.header__content-title{
+    font-size: 6rem;
+    color: var(--gray-dark);
+    font-family: var(--secondary-font);
+    font-weight: bold;
+    margin-bottom: 3rem;
+    line-height: 1.2;
+}
+.header__content-desc{
+    font-size: 1.5rem;
+    color: var(--gray-dark);
+    margin-bottom: 5rem;
+}
+.header__content-cta{
+    display: flex;
+    align-items: center;
+}
+.header__content-cta>a:first-child{
+    margin-right: 5rem;
+}
+.btn__play-video{
+    display: flex;  
+    align-items: center;
+}
+.btn__play-video>i{
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5rem;
+    background-color: var(--bg-block);
+    color: var(--primary-color);
+}
+.btn__play-video>span{
+    color: var(--gray-dark);
+    font-size: 1.4rem;
+}
+.btn{
+    display: inline-block;
+    vertical-align: middle;
+    border: 0;
+    outline: none;
+    padding: 1.5rem 3rem;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-family: var(--primary-color);
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+.btn--primary{
+    background-color: var(--primary-color);
+}
+.btn--icon i {
+    margin-left: 1rem;
+    color: inherit;
+}
