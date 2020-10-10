@@ -9,8 +9,12 @@
         top: 10%;
         max-width: 40%;
     }
+    .about__item{
+        width: 49.6%;
+    }
 }
 @media(max-width: 767px){
+    /*header*/
     .header__image,
     .menu{
         display: none;
@@ -35,5 +39,19 @@
       .header__content-cta > a:first-child {
         margin-right: 0;
         margin-bottom: 2.5rem;
+      }
+      /*About*/
+      .heading{margin-left: 0;}
+      .about__inner{
+          padding-top: 4rem;
+          padding-bottom: 4rem;
+      }
+      .about__content{
+          max-width: 72%;
+      }
+
+      /*About images*/
+      .about__item{
+          width: 100%%;
       }
 }
