@@ -136,6 +136,7 @@
 .heading{
     max-width: 87rem;
     margin-left: 15rem;
+    text-align: center;
 }
 .about__inner{
     position: relative;
@@ -214,4 +215,109 @@
 .about__item-content>span{
     font-size: 2.2rem;
     font-weight: bold;
+}
+
+/*Popular*/
+.btn--secondary{
+    background-color: var(--gray-dark);
+}
+.popular{
+    background-color: #fff;
+    padding-top: 14rem;
+    padding-bottom: 14rem;
+}
+.popular__list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+}
+.popular__item{
+    width: calc(33.33% - 20px);
+    border: 1px solid #eee;
+}
+.popular__link{
+    height: 100%;
+    display: block;
+    padding: 2rem 2rem 4.5rem;
+    text-align: center;
+    transition: box-shadow 0.2s linear;
+}
+.popular__list .btn--secondary{
+    transition: background-color 0.2s linear;
+}
+.popular__link img {
+    width: 100%;
+    height: 26.5rem;
+    object-fit: cover;
+}
+.popular__link .title{
+    font-family: var(--secondary-font);
+    font-size: 2.2rem;
+    margin-bottom: 3rem;
+    margin-top: 5rem;
+    color: var(--gray-dark);
+}
+.popular__link .desc{
+    font-size: 1.4rem;
+    line-height: 2;
+    color: var(--gray-light);
+    margin-bottom: 4rem;
+}
+.popular__link:hover{
+    box-shadow: 10px 10px 10px 20px rgba(0, 0, 0, 0.025);
+}
+.popular__link:hover .btn--secondary{
+    background-color: var(--primary-color);
+}
+/* Quote */
+.quote{
+    padding-top: 14rem;
+    padding-bottom: 14rem;
+    background-color: var(--bg-block);
+}
+.quote__item{
+    text-align: center;
+    margin-bottom: 6rem;
+}
+.quote__item img{
+    margin-left: auto;
+    margin-right: auto;
+}
+.quote__item .desc{
+    max-width: 80%;
+    margin: 5rem auto;
+    font-size: 1.4rem;
+    color: var (--gray-light);
+    line-height: 1.8;
+}
+.quote__item .author{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+}
+.quote__item .author-name{
+    font-family: var(--secondary-font);
+    font-size: 1.6rem;
+}
+.quote__item .author-name span{
+    font-family: var(--primary-font);
+    font-size: 1.2rem;
+}
+.quote__nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.quote__nav li {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 1rem;
+    background-color: #ffc3c2;
+    margin: 0 0.5rem;
+  }
+
+.quote__nav li.active{
+    background-color: #ff817e;
 }

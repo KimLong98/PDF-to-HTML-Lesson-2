@@ -52,6 +52,15 @@
 
       /*About images*/
       .about__item{
-          width: 100%%;
+        margin-top: 0.5rem;
+      }
+
+      /*Popular*/
+      .popular__item{
+          width: 100%;
+          margin-bottom: 2.5rem;
+      }
+      .popular__link img{
+        object-fit: contain;
       }
 }
