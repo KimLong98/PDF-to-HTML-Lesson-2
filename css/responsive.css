@@ -3,7 +3,7 @@
         padding-top: 12rem;
     }
 }
-@media(max-width: 1024px){
+@media(max-width: 1023px){
     .header__image
     {
         top: 10%;
@@ -11,6 +11,15 @@
     }
     .about__item{
         width: 49.6%;
+    }
+    .booking{
+        flex-direction: column;
+    }
+    .booking >*{
+        width: 100%;
+    }
+    .booking__form{
+        padding: 2rem;
     }
 }
 @media(max-width: 767px){
@@ -62,5 +71,26 @@
       }
       .popular__link img{
         object-fit: contain;
+      }
+
+      /*Team*/
+      .team__social{
+          opacity: 1;
+          visibility: visible;
+      }
+      .team__info{
+          bottom: 3rem;
+          transform: translateY(0);
+      }
+      .team__item{
+          width: 100%;
+          margin-bottom: 3rem;
+      }
+      .team__item:hover .team__info{
+          transform: none;
+      }
+      .team__item img{
+          width: 100%;
+          object-fit: cover;
       }
 }
