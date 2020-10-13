@@ -1,96 +1,176 @@
-@media(max-width: 1439px){
-    .header__content{
+@media(max-width: 1439px) {
+    .header__content {
         padding-top: 12rem;
     }
 }
-@media(max-width: 1023px){
-    .header__image
-    {
+
+@media(max-width: 1023px) {
+    .header__image {
         top: 10%;
         max-width: 40%;
     }
-    .about__item{
+
+    .about__item {
         width: 49.6%;
     }
-    .booking{
+
+    .booking {
         flex-direction: column;
     }
-    .booking >*{
+
+    .booking>* {
         width: 100%;
     }
-    .booking__form{
+
+    .booking__form {
         padding: 2rem;
     }
 }
-@media(max-width: 767px){
+
+@media(max-width: 767px) {
+
     /*header*/
-    .header__image,
-    .menu{
+    /* .header__image,
+    .menu {
         display: none;
+    } */
+
+    .header .menu {
+        margin-left: 0;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 100;
+        background-color: white;
+        border-left: 1px solid #f2f2f2;
+        min-width: 100%;
+        transition: transform 0.25s linear;
+        will-change: transform;
+        transform: translateX(100%);
     }
-    .menu__collapse{
+    .header .menu.is-open{
+        transform: translateX(0);
+    }
+    .header .menu__list {
+        flex-direction: column;
+        text-align: center;
+      }
+      .header .menu__item {
+        margin: 0;
+        width: 100%;
+      }
+      .header .menu__link {
         display: block;
+        padding: 1.5rem;
+        border-bottom: 1px solid #f2f2f2;
+      }
+    .menu__collapse {
+        display: block;
+        position: fixed;
+        right: 1rem;
+        top: 1rem;
+        z-index: 10;
+        cursor: pointer;
+        font-size: 1.4rem;
+        color: var(--primary-color);
+        padding-top: 2rem;
     }
-    .header__top{
+    .header .menu__close {
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+        z-index: 10;
+        cursor: pointer;
+        font-size: 1.4rem;
+        display: block;
+        color: var(--primary-color);
+      }
+      
+
+    .header__top {
         justify-content: space-between;
+        padding-top: 1rem;
     }
-    .header__content{
+
+    .header__content {
         padding-top: 7rem;
         margin-left: 0;
     }
+
     .header__content-title {
         font-size: 4rem;
-      }
-      .header__content-cta {
+    }
+
+    .header__content-cta {
         align-items: flex-start;
         flex-direction: column;
-      }
-      .header__content-cta > a:first-child {
+    }
+
+    .header__content-cta>a:first-child {
         margin-right: 0;
         margin-bottom: 2.5rem;
-      }
-      /*About*/
-      .heading{margin-left: 0;}
-      .about__inner{
-          padding-top: 4rem;
-          padding-bottom: 4rem;
-      }
-      .about__content{
-          max-width: 72%;
-      }
+    }
 
-      /*About images*/
-      .about__item{
+    /*About*/
+    .heading {
+        margin-left: 0;
+    }
+
+    .about__inner {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+
+    .about__content {
+        max-width: 72%;
+    }
+
+    /*About images*/
+    .about__item {
         margin-top: 0.5rem;
-      }
+    }
 
-      /*Popular*/
-      .popular__item{
-          width: 100%;
-          margin-bottom: 2.5rem;
-      }
-      .popular__link img{
+    /*Popular*/
+    .popular__item {
+        width: 100%;
+        margin-bottom: 2.5rem;
+    }
+
+    .popular__link img {
         object-fit: contain;
-      }
+    }
 
-      /*Team*/
-      .team__social{
-          opacity: 1;
-          visibility: visible;
-      }
-      .team__info{
-          bottom: 3rem;
-          transform: translateY(0);
-      }
-      .team__item{
-          width: 100%;
-          margin-bottom: 3rem;
-      }
-      .team__item:hover .team__info{
-          transform: none;
-      }
-      .team__item img{
-          width: 100%;
-          object-fit: cover;
-      }
+    /*Team*/
+    .team__social {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .team__info {
+        bottom: 3rem;
+        transform: translateY(0);
+    }
+
+    .team__item {
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+
+    .team__item:hover .team__info {
+        transform: none;
+    }
+
+    .team__item img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    /*contact*/
+    .contact__info,
+    .contact__form {
+        width: 100%;
+        margin-bottom: 3rem;
+        padding-left: 0;
+    }
 }
